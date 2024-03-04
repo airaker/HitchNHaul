@@ -1,0 +1,186 @@
+:root {
+  --text-primary: #b6b6b6;
+  --text-secondary: hsl(0, 80%, 50%);
+  --bg-primary: hsl(0, 0%, 90%);
+  --bg-secondary: #141418;
+  --button-primary: hsl(0, 80%, 50%);
+  --button-secondary: hsl(0, 76%, 53%);
+  /* 13px - 16px */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
+
+
+
+  /*
+
+  Mobile - 360px 
+  @media only screen and (min-width: 0rem) {
+  }
+  Tablet - 768px 
+  @media only screen and (min-width: 0rem) {
+  }
+  Mobile - 360px 
+  @media only screen and (min-width: 0rem) {
+  }
+  Desktop - 1300px (To make image background parallax) 
+  @media only screen and (min-width: 0rem) {
+    }
+  */
+
+
+  .subheader{
+    font-size: .5rem;
+    color: var(--text-secondary)
+  }
+  .btn {
+    border: none;
+    padding: 12px;
+    background-color: var(--button-primary);
+    color: hsl(0, 0%, 80%);
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: var(--button-secondary) 4px solid;
+    transition: all .1s ease-in-out;
+  }
+
+  .btn:hover::before {
+    left: -8px;
+    right: -8px;
+    top: -8px;
+    bottom: -8px;
+
+  }
+  /*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-footer-269 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 10%);
+    height: 25vh;
+  }
+  #cs-footer-269 img {
+    height: 4rem;
+  }
+  #cs-footer-269 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+  }
+  #cs-footer-269 h1 {
+    font-size: .8rem;
+    color: var(--button-primary);
+  }
+  #cs-footer-269 a {
+    font-size: .5rem;
+    color: white;
+  }
+  #cs-footer-269 a:hover {
+    text-decoration: underline;
+  }
+  #cs-footer-269 .row5 {
+    text-align: end;
+    align-items: end;
+    gap: .5rem;
+    width: 8rem;
+    display: none;
+  }
+  .made-by {
+    font-size: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141418;
+    color: gray
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 768px) {
+  #cs-footer-269 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    position: relative;
+  }
+  .footer-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer-shape svg {
+    position: relative;
+    display: block;
+    width: calc(188% + 1.3px);
+    height: 150px;
+}
+
+.footer-shape .shape-fill {
+    fill: #FFFFFF;
+}
+  #cs-footer-269 img {
+    height: 4rem;
+  }
+  #cs-footer-269 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+  }
+  #cs-footer-269 h1 {
+    color: var(--button-primary);
+    font-size: 1rem;
+  }
+  #cs-footer-269 h2 {
+    color: var(--button-primary);
+    font-size: 1.3rem;
+  }
+  #cs-footer-269 a {
+    color: white;
+    font-size: 1rem;
+  }
+  #cs-footer-269 a:hover {
+    text-decoration: underline;
+  }
+  #cs-footer-269 .row5 {
+    text-align: end;
+    align-items: end;
+    gap: .5rem;
+    width: 8rem;
+    display: inline;
+  }
+  .made-by {
+    font-size: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141418;
+    color: gray
+  }
+}
